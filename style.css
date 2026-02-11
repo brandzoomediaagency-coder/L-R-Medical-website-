@@ -1,14 +1,18 @@
 :root {
-    --primary-color: #0A6EBD;
-    --primary-dark: #085a9c;
-    --secondary-color: #f0f7ff;
-    --text-color: #333333;
-    --text-light: #666666;
+    --primary-color: #003366;
+    /* Darker Medical Blue */
+    --primary-dark: #002244;
+    --secondary-color: #e6f0fa;
+    --accent-color: #0A6EBD;
+    /* Keeping old blue as accent */
+    --text-color: #1a1a1a;
+    --text-light: #555555;
     --white: #ffffff;
-    --bg-light: #f9fbff;
+    --bg-light: #f4f8fb;
     --whatsapp-color: #25D366;
     --whatsapp-dark: #128C7E;
-    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow: 0 4px 20px rgba(0, 51, 102, 0.08);
+    /* Blue-ish shadow */
     --transition: all 0.3s ease;
 }
 
@@ -45,7 +49,8 @@ h4,
 }
 
 .section-padding {
-    padding: 80px 0;
+    padding: 60px 0;
+    /* Reduced from 80px to remove excessive space */
 }
 
 .bg-light {
@@ -138,10 +143,13 @@ h4,
 
 /* Hero Section */
 .hero {
-    padding-top: 160px;
-    padding-bottom: 80px;
-    background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
-    min-height: 90vh;
+    padding-top: 140px;
+    /* Reduced from 160px */
+    padding-bottom: 60px;
+    /* Reduced from 80px */
+    background: linear-gradient(135deg, #ffffff 0%, #e6f0fa 100%);
+    min-height: 80vh;
+    /* Reduced from 90vh */
     display: flex;
     align-items: center;
 }
@@ -544,18 +552,24 @@ h4,
 /* Final CTA */
 .final-cta {
     text-align: center;
-    background: var(--bg-light);
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.final-cta .section-padding {
+    padding: 60px 0;
 }
 
 .cta-content h2 {
+    color: var(--white);
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 25px;
     font-weight: 700;
 }
 
 .cta-content p {
+    color: rgba(255, 255, 255, 0.9);
     font-size: clamp(1.1rem, 2vw, 1.25rem);
-    color: var(--text-light);
     margin-bottom: 45px;
 }
 
@@ -663,7 +677,8 @@ h4,
     }
 
     .hero {
-        padding-top: 120px;
+        padding-top: 100px;
+        padding-bottom: 40px;
         text-align: center;
     }
 
@@ -804,11 +819,19 @@ h4,
         padding: 40px 20px;
     }
 
+    .footer-bottom {
+        padding-top: 15px;
+    }
+
     .whatsapp-float {
         bottom: 20px;
         right: 20px;
         width: 50px;
         height: 50px;
         font-size: 25px;
+    }
+
+    .section-padding {
+        padding: 40px 0;
     }
 }
